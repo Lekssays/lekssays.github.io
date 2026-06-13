@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,14 +18,14 @@
             --text-purple: #B48EAD;
             --text-gray: #4C566A;
         }
-
+ 
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'JetBrains Mono', 'Courier New', monospace;
         }
-
+ 
         body {
             background-color: var(--bg-dark);
             color: var(--text-primary);
@@ -36,7 +36,7 @@
             padding: 10px;
             line-height: 1.6;
         }
-
+ 
         #terminal {
             width: 100%;
             max-width: 900px;
@@ -50,7 +50,7 @@
             display: flex;
             flex-direction: column;
         }
-
+ 
         .terminal-header {
             background-color: #353b4a;
             padding: 10px;
@@ -59,13 +59,13 @@
             border-radius: 8px 8px 0 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
-
+ 
         .terminal-buttons {
             display: flex;
             gap: 8px;
             margin-right: 15px;
         }
-
+ 
         .terminal-button {
             width: 12px;
             height: 12px;
@@ -73,11 +73,11 @@
             cursor: pointer;
             transition: transform 0.2s ease;
         }
-
+ 
         .terminal-button:hover {
             transform: scale(1.1);
         }
-
+ 
         .terminal-tabs {
             display: flex;
             gap: 10px;
@@ -85,7 +85,7 @@
             padding: 0 15px;
             overflow-x: auto;
         }
-
+ 
         .terminal-tab {
             padding: 5px 10px;
             border: 1px solid var(--text-green);
@@ -96,28 +96,28 @@
             transition: all 0.3s ease;
             white-space: nowrap;
         }
-
+ 
         .terminal-tab.active {
             background-color: var(--text-green);
             color: var(--bg-dark);
         }
-
+ 
         .terminal-tab:hover:not(.active) {
             background-color: rgba(163, 190, 140, 0.2);
         }
-
+ 
         .close {
             background-color: var(--text-red);
         }
-
+ 
         .minimize {
             background-color: var(--text-yellow);
         }
-
+ 
         .maximize {
             background-color: var(--text-green);
         }
-
+ 
         .terminal-title {
             color: var(--text-primary);
             font-size: 14px;
@@ -125,19 +125,19 @@
             flex-grow: 1;
             text-align: center;
         }
-
+ 
         .terminal-content {
             padding: 15px;
             height: calc(100% - 95px);
             overflow-y: auto;
             background-color: rgba(0, 0, 0, 0.2);
         }
-
+ 
         .welcome-message {
             text-align: center;
             margin-bottom: 20px;
         }
-
+ 
         .ascii-art {
             color: var(--text-green);
             font-family: monospace;
@@ -145,14 +145,14 @@
             line-height: 1.2;
             margin-bottom: 20px;
         }
-
+ 
         .contact-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 10px;
             margin: 20px 0;
         }
-
+ 
         .contact-item {
             display: flex;
             align-items: center;
@@ -163,28 +163,28 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             transition: all 0.3s ease;
         }
-
+ 
         .contact-item:hover {
             transform: translateY(-2px);
             border-color: var(--text-blue);
         }
-
+ 
         .contact-item a {
             color: var(--text-primary);
             text-decoration: none;
             transition: color 0.3s ease;
         }
-
+ 
         .contact-item a:hover {
             color: var(--text-blue);
         }
-
+ 
         .contact-item i {
             color: var(--text-yellow);
             width: 20px;
             text-align: center;
         }
-
+ 
         .section-header {
             color: var(--text-yellow);
             margin: 20px 0 10px;
@@ -192,7 +192,7 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             font-size: 1.1em;
         }
-
+ 
         .publication-card {
             background-color: rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -201,35 +201,35 @@
             margin-bottom: 15px;
             transition: all 0.3s ease;
         }
-
+ 
         .publication-card:hover {
             transform: translateY(-2px);
             border-color: var(--text-blue);
         }
-
+ 
         .publication-year {
             color: var(--text-yellow);
             font-size: 0.9em;
             margin-bottom: 5px;
         }
-
+ 
         .publication-title {
             color: var(--text-primary);
             margin-bottom: 5px;
             font-weight: bold;
         }
-
+ 
         .publication-authors {
             color: var(--text-blue);
             font-size: 0.9em;
             margin-bottom: 5px;
         }
-
+ 
         .publication-venue {
             color: var(--text-green);
             font-size: 0.9em;
         }
-
+ 
         .command-line {
             display: flex;
             align-items: center;
@@ -237,18 +237,18 @@
             opacity: 0;
             animation: fadeIn 0.3s ease-out forwards;
         }
-
+ 
         .prompt {
             color: var(--text-green);
             display: flex;
             align-items: center;
             gap: 5px;
         }
-
+ 
         .prompt span {
             color: var(--text-blue);
         }
-
+ 
         .cursor {
             width: 8px;
             height: 16px;
@@ -256,7 +256,7 @@
             margin-left: 2px;
             animation: blink 1s infinite;
         }
-
+ 
         .output {
             margin: 10px 0;
             padding: 10px;
@@ -266,48 +266,48 @@
             animation: fadeIn 0.3s ease-out forwards;
             color: var(--text-primary);
         }
-
+ 
         @keyframes blink {
-
+ 
             0%,
             100% {
                 opacity: 1;
             }
-
+ 
             50% {
                 opacity: 0;
             }
         }
-
+ 
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(10px);
             }
-
+ 
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
+ 
         ::-webkit-scrollbar {
             width: 8px;
         }
-
+ 
         ::-webkit-scrollbar-track {
             background: var(--bg-terminal);
         }
-
+ 
         ::-webkit-scrollbar-thumb {
             background: var(--text-gray);
             border-radius: 4px;
         }
-
+ 
         ::-webkit-scrollbar-thumb:hover {
             background: var(--text-blue);
         }
-
+ 
         .tag {
             display: inline-block;
             padding: 2px 8px;
@@ -317,56 +317,56 @@
             background-color: var(--text-gray);
             color: var(--text-primary);
         }
-
+ 
         .service-section {
             margin-bottom: 20px;
         }
-
+ 
         .service-item {
             margin: 5px 0;
             padding-left: 20px;
             position: relative;
         }
-
+ 
         .service-item::before {
             content: "•";
             position: absolute;
             left: 5px;
             color: var(--text-blue);
         }
-
+ 
         @media (max-width: 768px) {
             .terminal-header {
                 flex-direction: column;
                 align-items: flex-start;
             }
-
+ 
             .terminal-buttons {
                 margin-right: 0;
                 margin-bottom: 10px;
             }
-
+ 
             .terminal-title {
                 font-size: 12px;
             }
-
+ 
             .terminal-tab {
                 padding: 5px 8px;
                 font-size: 12px;
             }
-
+ 
             .terminal-content {
                 padding: 10px;
             }
-
+ 
             .contact-grid {
                 grid-template-columns: 1fr;
             }
-
+ 
             .publication-card {
                 padding: 10px;
             }
-
+ 
             .publication-year,
             .publication-title,
             .publication-authors,
@@ -376,7 +376,7 @@
         }
     </style>
 </head>
-
+ 
 <body>
     <div id="terminal">
         <div class="terminal-header">
@@ -394,27 +394,26 @@
         </div>
         <div class="terminal-content" id="terminal-content"></div>
     </div>
-
+ 
     <script>
         const sections = {
             home: {
                 welcome: `
-      .----.
-     /      \\   Ahmed Lekssays 🇲🇦 
-    |  o  o  |  
-    |   ||   |  Security Researcher 
-    |   __   |  @ Qatar Computing Research Institute
-     \\______/
-      _|__|_      
-     /      \\   <* Learning how machines work and fail *>
-    |        |  
-    |________|  
-     |  ||  |   
-     |  ||  |   
-     '--''--' `,
-                bio: `Dr. Ahmed Lekssays is a Security Researcher at Qatar Computing Research Institute. He obtained his Ph.D. from the University of Insubria in Varese, Italy in 2022 funded by EU's Marie Skłodowska-Curie Actions, and his master’s and bachelor’s degrees from Al Akhawayn University in Ifrane, Morocco. He helped many organizations secure their applications such as Microsoft. He is a competitive programmer and an open-source software advocate. He is a member of the Scientific Committee of the Moroccan Association for Computing Sciences.`,
-                education: [
-                    {
+   .----.
+  /      \\   Ahmed Lekssays 🇲🇦 
+ |  o  o  |  
+ |   ||   |  Research Scientist 
+ |   __   |  @ Qatar Computing Research Institute
+  \\______/
+   _|__|_      
+  /      \\   <* Learning how machines work and fail *>
+ |        |  
+ |________|  
+  |  ||  |  
+  |  ||  |  
+  '--''--' `,
+                bio: `Dr. Ahmed Lekssays is a Research Scientist at Qatar Computing Research Institute. He obtained his Ph.D. from the University of Insubria in Varese, Italy in 2022 funded by EU's Marie Skłodowska-Curie Actions, and his master’s and bachelor’s degrees from Al Akhawayn University in Ifrane, Morocco. He helped many organizations secure their applications such as Microsoft. He is a competitive programmer and an open-source software advocate. He is a member of the Scientific Committee of the Moroccan Association for Computing Sciences.`,
+                education: [{
                         period: "2019-2022",
                         degree: "Ph.D. in Computer Science",
                         institution: "University of Insubria, Varese, Italy",
@@ -435,8 +434,7 @@
                         ]
                     }
                 ],
-                awards: [
-                    {
+                awards: [{
                         category: "Research",
                         title: "Marie Skłodowska-Curie Actions Fellowship",
                         year: "2019"
@@ -451,6 +449,23 @@
                         category: "Industry",
                         title: "Microsoft Hall of Fame",
                         description: "Found and reported critical security vulnerabilities"
+                    }
+                ],
+                discoveries: [{
+                        source: "PHP Foundation",
+                        description: "Acknowledged for finding a zero-day vulnerability in core PHP (CVE-2025-6491)."
+                    },
+                    {
+                        source: "Red Hat",
+                        description: "Acknowledged for finding a zero-day vulnerability in libxml2 library (CVE-2025-6021 and CVE-2025-6170)."
+                    },
+                    {
+                        source: "Videolan",
+                        description: "Acknowledged for finding a zero-day vulnerability in VLC Media Player (CVE-2025-51602). Fixed in VLC v3.0.22."
+                    },
+                    {
+                        source: "GNOME / libsoup",
+                        description: "Discovered HTTP request smuggling vulnerability (CVE-2026-1801) in libsoup's chunked transfer encoding parser. The library accepted lone LF characters instead of CRLF as required by RFC 9112, enabling request smuggling when deployed behind RFC-compliant proxies."
                     }
                 ],
                 contacts: [
@@ -471,9 +486,15 @@
                 ],
                 service: {
                     committees: [
-                        "Program Committee Member ICDE 2024",
+                        "Program Committee Member RAID 2026",
+                        "Program Committee Member ACSAC 2026",
+                        "Artifact Evaluation Committee Member USENIX 2027",
+                        "Artifact Evaluation Committee Member USENIX 2026",
+                        "Artifact Evaluation Committee Member CCS 2026",
+                        "Program Committee Member ICDE 2025",
                         "Artifact Evaluation Committee Member NDSS 2024",
-                        "Artifact Evaluation Committee Member USENIX 2025"
+                        "Artifact Evaluation Committee Member USENIX 2025",
+                        "Artifact Evaluation Committee Member CCS 2025"
                     ],
                     reviewer: [
                         "IEEE Transactions on Information Forensics and Security",
@@ -484,12 +505,46 @@
                         "CODASPY 2021"
                     ]
                 },
-                publications: [
+                publications: [{
+                        year: 2026,
+                        title: "Bridging Code Property Graphs and Language Models for Program Analysis",
+                        authors: ["A Lekssays"],
+                        venue: "Proceedings of the 2026 IEEE/ACM 4th International Workshop on Software Vulnerability Management",
+                        type: "Workshop"
+                    },
+                    {
+                        year: 2025,
+                        title: "LLMxCPG: Context-aware vulnerability detection through code property graph-guided large language models.",
+                        authors: ["A Lekssays", "H Mouhcine", "K Tran", "T Yu", "I Khalil"],
+                        venue: "The 34th USENIX Security Symposium (USENIX Security 25)",
+                        type: "Conference"
+                    },
+                    {
+                        year: 2025,
+                        title: "From Text to Actionable Intelligence: Automating STIX Entity and Relationship Extraction.",
+                        authors: ["A Lekssays", "HT Sencar", "T Yu"],
+                        venue: "The 28th International Symposium on Research in Attacks, Intrusions and Defenses (RAID 2025)",
+                        type: "Conference"
+                    },
+                    {
+                        year: 2025,
+                        title: "TechniqueRAG: Retrieval augmented generation for adversarial technique annotation in cyber threat intelligence text.",
+                        authors: ["A Lekssays", "U Shukla", "HT Sencar", "MR Parvez"],
+                        venue: "The 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)",
+                        type: "Conference"
+                    },
+                    {
+                        year: 2025,
+                        title: "StructTransform: A scalable attack surface for safety-aligned large language models.",
+                        authors: ["S Yoosuf", "T Ali", "A Lekssays", "M AlSabah", "I Khalil"],
+                        venue: "The 30th European Symposium on Research in Computer Security (ESORICS 2025)",
+                        type: "Conference"
+                    },
                     {
                         year: 2024,
                         title: "Semantic ranking for automated adversarial technique annotation in security text",
                         authors: ["U Kumarasinghe", "A Lekssays", "HT Sencar", "S Boughorbel", "C Elvitigala"],
-                        venue: "Proceedings of the 19th ACM Asia Conference on Computer and Communications Security",
+                        venue: "Proceedings of the 19th ACM Asia Conference on Computer and Communications Security (AsiaCCS 2024)",
                         type: "Conference"
                     },
                     {
@@ -563,40 +618,52 @@
                         type: "Conference"
                     }
                 ],
-                selected_publications: [
+                patents: [{
+                    title: "Systems and methods for an automated tool for stix report generation from threat intelligence text",
+                    inventors: ["Husrev Taha Sencar", "Ahmed Lekssays", "Ting Yu"],
+                    date: "2025/6/19",
+                    office: "US",
+                    app_number: "18980609"
+                }],
+                selected_publications: [{
+                        year: 2025,
+                        title: "LLMxCPG: Context-aware vulnerability detection through code property graph-guided large language models.",
+                        authors: ["A Lekssays", "H Mouhcine", "K Tran", "T Yu", "I Khalil"],
+                        venue: "The 34th USENIX Security Symposium (USENIX Security 25)",
+                        type: "Conference"
+                    },
+                    {
+                        year: 2025,
+                        title: "From Text to Actionable Intelligence: Automating STIX Entity and Relationship Extraction.",
+                        authors: ["A Lekssays", "HT Sencar", "T Yu"],
+                        venue: "The 28th International Symposium on Research in Attacks, Intrusions and Defenses (RAID 2025)",
+                        type: "Conference"
+                    },
+                    {
+                        year: 2025,
+                        title: "TechniqueRAG: Retrieval augmented generation for adversarial technique annotation in cyber threat intelligence text.",
+                        authors: ["A Lekssays", "U Shukla", "HT Sencar", "MR Parvez"],
+                        venue: "The 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025)",
+                        type: "Conference"
+                    },
+                    {
+                        year: 2025,
+                        title: "StructTransform: A scalable attack surface for safety-aligned large language models.",
+                        authors: ["S Yoosuf", "T Ali", "A Lekssays", "M AlSabah", "I Khalil"],
+                        venue: "The 30th European Symposium on Research in Computer Security (ESORICS 2025)",
+                        type: "Conference"
+                    },
                     {
                         year: 2024,
                         title: "Semantic ranking for automated adversarial technique annotation in security text",
                         authors: ["U Kumarasinghe", "A Lekssays", "HT Sencar", "S Boughorbel", "C Elvitigala"],
-                        venue: "Proceedings of the 19th ACM Asia Conference on Computer and Communications Security",
+                        venue: "Proceedings of the 19th ACM Asia Conference on Computer and Communications Security (AsiaCCS 2024)",
                         type: "Conference"
                     },
-                    {
-                        year: 2021,
-                        title: "LiMNet: early-stage detection of iot botnets with lightweight memory networks",
-                        authors: ["L Giaretta", "A Lekssays", "B Carminati", "E Ferrari", "Š Girdzijauskas"],
-                        venue: "European Symposium on Research in Computer Security",
-                        type: "Conference"
-                    },
-                    {
-                        year: 2021,
-                        title: "PAutoBotCatcher: A blockchain-based privacy-preserving botnet detector for Internet of Things",
-                        authors: ["A Lekssays", "L Landa", "B Carminati", "E Ferrari"],
-                        venue: "Computer Networks",
-                        type: "Journal"
-                    },
-                    {
-                        year: 2023,
-                        title: "MalCon: A blockchain-based malware containment framework for Internet of Things",
-                        authors: ["A Lekssays", "B Carminati", "E Ferrari"],
-                        venue: "Computer Networks",
-                        type: "Journal"
-                    },          
                 ]
             },
             initiatives: {
-                projects: [
-                    {
+                projects: [{
                         title: "The Missing Semester (Moroccan Edition)",
                         description: "Bridging the gap between theoretical computer science courses and practical applications in Moroccan universities."
                     },
@@ -609,13 +676,13 @@
                 ]
             }
         };
-
+ 
         function createPrompt(command = '') {
             return `<div class="command-line">
                 <span class="prompt">guest@<span>lekssays</span>:~$ ${command}</span>
             </div>`;
         }
-
+ 
         function renderHome() {
             const content = document.getElementById('terminal-content');
             content.innerHTML = `
@@ -623,10 +690,10 @@
                 <div class="output">
                     <pre class="ascii-art">${sections.home.welcome}</pre>
                 </div>
-
+ 
                 ${createPrompt('cat about.txt')}
                 <div class="output">${sections.home.bio}</div>
-
+ 
                 ${createPrompt('cat research/selected.txt')}
                 <div class="section-header">📃 Selected Publications</div>
                 ${sections.research.selected_publications.map(pub => `
@@ -640,7 +707,7 @@
                         <div class="publication-venue">${pub.venue}</div>
                     </div>
                 `).join('')}
-
+ 
                 ${createPrompt('cat education.txt')}
                 <div class="section-header">📚 Education History</div>
                 ${sections.home.education.map(edu => `
@@ -653,7 +720,7 @@
                         </div>
                     </div>
                 `).join('')}
-
+ 
                 ${createPrompt('cat awards.txt')}
                 <div class="section-header">🏆 Honors & Awards</div>
                 ${sections.home.awards.map(award => `
@@ -665,7 +732,16 @@
                         ${award.description ? `<div class="publication-authors">${award.description}</div>` : ''}
                     </div>
                 `).join('')}
-
+ 
+                ${createPrompt('cat discoveries.txt')}
+                <div class="section-header">🛡️ Security Discoveries</div>
+                ${sections.home.discoveries.map(disc => `
+                    <div class="publication-card">
+                        <div class="publication-title">${disc.source}</div>
+                        <div class="publication-venue">${disc.description}</div>
+                    </div>
+                `).join('')}
+ 
                 ${createPrompt('cat social.txt')}
                 <div class="contact-grid">
                     ${sections.home.contacts.map(contact => `
@@ -677,7 +753,7 @@
                 </div>
             `;
         }
-
+ 
         function renderResearch() {
             const content = document.getElementById('terminal-content');
             content.innerHTML = `
@@ -688,7 +764,7 @@
                         <div class="publication-venue">• ${interest}</div>
                     `).join('')}
                 </div>
-
+ 
                 ${createPrompt('cat services.txt')}
                 <div class="section-header">🎓 Academic Service</div>
                 <div class="publication-card">
@@ -702,7 +778,7 @@
                         <div class="service-item">${review}</div>
                     `).join('')}
                 </div>
-
+ 
                 ${createPrompt('cat publications.txt')}
                 <div class="section-header">📚 Publications</div>
                 ${sections.research.publications.map(pub => `
@@ -712,13 +788,23 @@
                             <div class="tag">${pub.type}</div>
                         </div>
                         <div class="publication-title">${pub.title}</div>
-                        <div class="publication-authors">${pub.authors}</div>
+                        <div class="publication-authors">${pub.authors.join(', ')}</div>
                         <div class="publication-venue">${pub.venue}</div>
+                    </div>
+                `).join('')}
+                
+                ${createPrompt('cat patents.txt')}
+                <div class="section-header">📜 Patents</div>
+                ${sections.research.patents.map(pat => `
+                    <div class="publication-card">
+                        <div class="publication-year">[${pat.date}] - ${pat.office} ${pat.app_number}</div>
+                        <div class="publication-title">${pat.title}</div>
+                        <div class="publication-authors">Inventors: ${pat.inventors.join(', ')}</div>
                     </div>
                 `).join('')}
             `;
         }
-
+ 
         function renderInitiatives() {
             const content = document.getElementById('terminal-content');
             content.innerHTML = `
@@ -734,11 +820,11 @@
                 `).join('')}
             `;
         }
-
+ 
         function switchTab(tab) {
             document.querySelectorAll('.terminal-tab').forEach(t => t.classList.remove('active'));
             event.target.classList.add('active');
-
+ 
             switch (tab) {
                 case 'home':
                     renderHome();
@@ -751,10 +837,10 @@
                     break;
             }
         }
-
+ 
         // Initial render
         renderHome();
     </script>
 </body>
-
+ 
 </html>
