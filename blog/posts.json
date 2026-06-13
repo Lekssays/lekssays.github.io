@@ -1,0 +1,721 @@
+[
+  {
+    "title": "On Cross-chain Bridges Security",
+    "date": "2022-08-07T20:57:56+00:00",
+    "modified": "2022-08-07T23:28:20+00:00",
+    "slug": "on-cross-chain-bridges-security",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/on-cross-chain-bridges-security/5edc642a-cody-hiscox-hp5acad1h0k-unsplash.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Blockchain",
+      "Cross-chain Bridges",
+      "Cyber Security",
+      "DeFi"
+    ],
+    "excerpt": "Blockchain and distributed ledger technology in general have been gaining a lot of traction in the last few years. The technology has moved from simple cryptocurrency transfers to more complex applications with the rise of smart contracts, and the blockchain ecosystem has been…",
+    "original_url": "https://lekssays.wordpress.com/2022/08/07/on-cross-chain-bridges-security/",
+    "like_count": 2
+  },
+  {
+    "title": "In-browser End-to-End Encryption: A myth?",
+    "date": "2021-12-18T10:44:08+00:00",
+    "modified": "2021-12-18T13:52:37+00:00",
+    "slug": "in-browser-end-to-end-encryption-a-myth",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/in-browser-end-to-end-encryption-a-myth/e5ac6148-markus-winkler-ojsg0e_qcbo-unsplash.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "encryption",
+      "end-to-end",
+      "privacy"
+    ],
+    "excerpt": "End-to-end encryption (E2EE, for short) is an emerging technology for privacy-preserving messaging and content sharing in mobile applications such as ProtonMail, WhatsApp, Telegram, and Signal. However, we are starting to see web applications that claim to offer E2EE in the…",
+    "original_url": "https://lekssays.wordpress.com/2021/12/18/in-browser-end-to-end-encryption-a-myth/",
+    "like_count": 5
+  },
+  {
+    "title": "Analysis of Wiqaytna Application for COVID-19 Tracking",
+    "date": "2020-06-01T20:16:40+00:00",
+    "modified": "2020-06-03T03:44:02+00:00",
+    "slug": "analysis-of-wiqaytna-application-for-covid-19-tracking",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/analysis-of-wiqaytna-application-for-covid-19-tracking/aba2fca7-logo.png",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "covid-19",
+      "Cyber Security",
+      "privacy"
+    ],
+    "excerpt": "I spent some time today analyzing the Wiqaytna application (Android version) published by the Moroccan Ministry of Interior, and I have some comments on the ongoing debate.",
+    "original_url": "https://lekssays.wordpress.com/2020/06/01/analysis-of-wiqaytna-application-for-covid-19-tracking/",
+    "like_count": 3
+  },
+  {
+    "title": "URLs Support Phishing Attacks by Design",
+    "date": "2020-04-15T02:58:20+00:00",
+    "modified": "2020-04-15T02:58:20+00:00",
+    "slug": "urls-support-phishing-attacks-by-design",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/urls-support-phishing-attacks-by-design/e4f85bd9-4240dcff-66ab-4e5e-a0e3-79879b5fb80f-1520x800-1.png",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "phishing",
+      "privacy",
+      "urls"
+    ],
+    "excerpt": "I was recently reading some articles and watching a video by @LiveOverflow, in which he discussed how hard URIs are to understand. He mentioned a presentation by Orange that explained how libraries in different programming languages parse URIs, which helped Orange find many SSRF…",
+    "original_url": "https://lekssays.wordpress.com/2020/04/15/urls-support-phishing-attacks-by-design/",
+    "like_count": 0
+  },
+  {
+    "title": "Overview of Malware Detection Approaches and Techniques",
+    "date": "2020-03-26T21:15:39+00:00",
+    "modified": "2020-03-26T21:16:34+00:00",
+    "slug": "overview-of-malware-detection-approaches-and-techniques",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/overview-of-malware-detection-approaches-and-techniques/82f99dc8-pt-blog-malware-virus-anti-malware-antivirus-differences-banner-01.png",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "malware"
+    ],
+    "excerpt": "After more than a year without posting anything on this blog, I am back. I am currently doing research on malware for mobile and IoT devices.",
+    "original_url": "https://lekssays.wordpress.com/2020/03/26/overview-of-malware-detection-approaches-and-techniques/",
+    "like_count": 0
+  },
+  {
+    "title": "Secure Coding Best Practices Checklist",
+    "date": "2018-07-30T00:11:53+00:00",
+    "modified": "2018-07-30T00:11:53+00:00",
+    "slug": "secure-coding-best-practices-checklist",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/secure-coding-best-practices-checklist/81ff31fc-softwarebug.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "cryptography",
+      "Cyber Security",
+      "programming"
+    ],
+    "excerpt": "I have worked with programmers and programs for a long time, both as a penetration tester and as a developer. Over the years, I have conducted many audits of web and mobile applications built on different architectures. I put together this checklist to help developers ensure the…",
+    "original_url": "https://lekssays.wordpress.com/2018/07/30/secure-coding-best-practices-checklist/",
+    "like_count": 3
+  },
+  {
+    "title": "What you Should Know as a User about GDPR?",
+    "date": "2018-05-25T03:24:08+00:00",
+    "modified": "2018-05-25T04:12:30+00:00",
+    "slug": "what-you-should-know-as-a-user-about-gdpr",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/what-you-should-know-as-a-user-about-gdpr/0f1b35e0-gdpr_compliance_0.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "ethics",
+      "hacking",
+      "privacy"
+    ],
+    "excerpt": "By now, I am sure you have received plenty of emails about the new European Union regulation called GDPR, the General Data Protection Regulation. It is now recognized as law across the EU under 2016/679. The European Union is a leader in protecting the privacy and data of its…",
+    "original_url": "https://lekssays.wordpress.com/2018/05/25/what-you-should-know-as-a-user-about-gdpr/",
+    "like_count": 1
+  },
+  {
+    "title": "Editorial of &#8220;Dehbi et ses amis&#8221; &#8211; Moroccan Olympiads of Informatics (Round 2)",
+    "date": "2018-04-21T16:07:38+00:00",
+    "modified": "2018-04-21T16:10:52+00:00",
+    "slug": "editorial-of-dehbi-et-ses-amis-moroccan-olympiads-of-informatics-round-2",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/editorial-of-dehbi-et-ses-amis-moroccan-olympiads-of-informatics-round-2/4efa302d-screen-shot-2018-04-21-at-4-08-25-pm.png",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "programming"
+    ],
+    "excerpt": "Dehbi is my roommate and one of the best human beings I have met. He is graduating this semester, so he is the hero of this problem.",
+    "original_url": "https://lekssays.wordpress.com/2018/04/21/editorial-of-dehbi-et-ses-amis-moroccan-olympiads-of-informatics-round-2/",
+    "like_count": 1
+  },
+  {
+    "title": "Nidhal Guessoum: Islam, Science and The Next Phase Of Debates",
+    "date": "2018-03-24T14:19:41+00:00",
+    "modified": "2018-03-24T14:24:20+00:00",
+    "slug": "nidhal-guessoum-islam-science-and-the-next-phase-of-debates",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/nidhal-guessoum-islam-science-and-the-next-phase-of-debates/820a2180-maxresdefault.jpg",
+    "categories": [
+      "Literature"
+    ],
+    "tags": [
+      "debate",
+      "islam",
+      "nidhal guessoum",
+      "science"
+    ],
+    "excerpt": "The debate over Islam and science spans multiple disciplines and many thinkers from different schools of thought. It has been viewed from various angles: the perennialist philosophy of Sayyed Hossein Nasr, the secular modernism of Pervez Hoodbhoy, the Islamic ethical science of…",
+    "original_url": "https://lekssays.wordpress.com/2018/03/24/nidhal-guessoum-islam-science-and-the-next-phase-of-debates/",
+    "like_count": 2
+  },
+  {
+    "title": "How DDos can be used to make money?",
+    "date": "2018-03-11T16:58:00+00:00",
+    "modified": "2018-03-11T16:58:00+00:00",
+    "slug": "how-ddos-can-be-used-to-make-money",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/how-ddos-can-be-used-to-make-money/306ad4c5-memcached.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "Cyber Warfare",
+      "hacking",
+      "privacy",
+      "programming"
+    ],
+    "excerpt": "I have been investigating the impact of the Memcached DDoS attacks that are widely used against servers today, especially after one took down GitHub with a 1.7 Tbps DDoS attack, the largest DDoS attack ever recorded.",
+    "original_url": "https://lekssays.wordpress.com/2018/03/11/how-ddos-can-be-used-to-make-money/",
+    "like_count": 4
+  },
+  {
+    "title": "Irregular Thoughts on Deep Web",
+    "date": "2018-03-01T22:28:42+00:00",
+    "modified": "2018-03-01T22:39:18+00:00",
+    "slug": "irregular-thoughts-on-deep-web",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/irregular-thoughts-on-deep-web/bd14326a-deep_web_02a-1050x630.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "Dark Web",
+      "deep web",
+      "privacy"
+    ],
+    "excerpt": "I have been reading many articles that tackle the topic of the deep web, especially in Arabic, and I noticed that it has become a \"fancy\" subject used to attract people's curiosity. However, these articles lack a sound technical understanding of the matter. I know some of you…",
+    "original_url": "https://lekssays.wordpress.com/2018/03/01/irregular-thoughts-on-deep-web/",
+    "like_count": 6
+  },
+  {
+    "title": "Please, Linux is NOT an operating system!",
+    "date": "2018-01-31T00:01:49+00:00",
+    "modified": "2018-01-31T00:01:49+00:00",
+    "slug": "please-linux-is-not-an-operating-system",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/please-linux-is-not-an-operating-system/2abee508-gnu-vs-linux_orig.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "linux",
+      "open source",
+      "operating systems"
+    ],
+    "excerpt": "I am writing this post because almost everywhere I look, people talk about Linux as if it were an operating system. Linux is NOT an operating system. One day, my roommate told me I had said this very sentence in my sleep. And if you really know me, you know this topic is a…",
+    "original_url": "https://lekssays.wordpress.com/2018/01/31/please-linux-is-not-an-operating-system/",
+    "like_count": 1
+  },
+  {
+    "title": "An Overview of Anti-Forensics Techniques",
+    "date": "2017-09-14T10:48:34+00:00",
+    "modified": "2017-09-14T10:48:35+00:00",
+    "slug": "an-overview-of-anti-forensics-techniques",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/an-overview-of-anti-forensics-techniques/3e89af4a-fireeye.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "Cyber Warfare",
+      "Forensics"
+    ],
+    "excerpt": "Protecting the sensitive data of a government, and data protection in general, has become a major challenge for security architects around the world. Last year, the Moroccan government faced numerous attacks from different sources. The most notorious was the \"Leaks\" by \"Chris…",
+    "original_url": "https://lekssays.wordpress.com/2017/09/14/an-overview-of-anti-forensics-techniques/",
+    "like_count": 0
+  },
+  {
+    "title": "Hackers are free people, just like artists!",
+    "date": "2017-07-21T11:28:40+00:00",
+    "modified": "2017-07-21T11:28:40+00:00",
+    "slug": "hackers-are-free-people-just-like-artists",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/hackers-are-free-people-just-like-artists/ca51f57c-20132f012f302f792fcyberwarfar-12c1b.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "Cyber Warfare",
+      "hacking",
+      "privacy"
+    ],
+    "excerpt": "In third-world countries, hackers are treated as criminals regardless of how ethical they are. They are not legally protected, and they are seen as unwanted creatures working against the country. In Morocco, however, hackers have built a strong reputation around the globe as…",
+    "original_url": "https://lekssays.wordpress.com/2017/07/21/hackers-are-free-people-just-like-artists/",
+    "like_count": 1
+  },
+  {
+    "title": "How Security Became Digitized?",
+    "date": "2017-07-16T09:41:00+00:00",
+    "modified": "2017-07-16T09:41:00+00:00",
+    "slug": "how-security-became-digitized",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/how-security-became-digitized/3a5b8dda-cyber-security-credit-shutterstock.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "hackers",
+      "hacking",
+      "privacy"
+    ],
+    "excerpt": "Nowadays, cyber security has become the equivalent of physical security. If a cyber criminal steals your passwords or your credit cards, it is as if he stole your keys or your wallet in the street. The problem with the internet is that the “wallet” is on display to everyone. It…",
+    "original_url": "https://lekssays.wordpress.com/2017/07/16/how-security-became-digitized/",
+    "like_count": 0
+  },
+  {
+    "title": "Privacy from a Moroccan Perspective",
+    "date": "2017-07-15T12:55:12+00:00",
+    "modified": "2017-07-15T12:55:17+00:00",
+    "slug": "privacy-from-a-moroccan-perspective",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/privacy-from-a-moroccan-perspective/9047a437-internet_privacy.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "privacy"
+    ],
+    "excerpt": "In 2015, an Italian company that sells hacking software such as Trojans and malware was breached by an anonymous team, which leaked about four hundred gigabytes of data. Surprisingly, the leaked data revealed how much money Morocco had spent buying spyware from HackingTeam. The…",
+    "original_url": "https://lekssays.wordpress.com/2017/07/15/privacy-from-a-moroccan-perspective/",
+    "like_count": 0
+  },
+  {
+    "title": "Cyber Security.. A Short History",
+    "date": "2017-07-14T21:53:20+00:00",
+    "modified": "2017-07-14T21:54:01+00:00",
+    "slug": "cyber-security-a-short-history",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/cyber-security-a-short-history/0a49c306-p00v2b0b.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "cryptography",
+      "Cyber Security",
+      "turing"
+    ],
+    "excerpt": "Cyber security has become one of the hot topics discussed across the media today. Over the past five years, countless articles have covered hackers being arrested or banks being attacked with nothing more than viruses and malware.",
+    "original_url": "https://lekssays.wordpress.com/2017/07/14/cyber-security-a-short-history/",
+    "like_count": 0
+  },
+  {
+    "title": "Editorial of “Problem C – Omar the Bus Driver” in CodeIT 2017",
+    "date": "2017-05-22T15:49:23+00:00",
+    "modified": "2017-05-22T15:52:39+00:00",
+    "slug": "editorial-of-problem-c-omar-the-bus-driver-in-codeit-2017",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/editorial-of-problem-c-omar-the-bus-driver-in-codeit-2017/cb2a56ef-18268537_1065466083554757_3503560010645890020_n.png",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "programming"
+    ],
+    "excerpt": "I proposed a problem called “Problem C – Omar the Bus Driver” on the Scorify platform, and I would like to share its solution in this post. I am not entirely happy with it, because the problem statement was ambiguous and some cases were inconsistent, even though they did not…",
+    "original_url": "https://lekssays.wordpress.com/2017/05/22/editorial-of-problem-c-omar-the-bus-driver-in-codeit-2017/",
+    "like_count": 0
+  },
+  {
+    "title": "Editorial of &#8220;Problem A &#8211; Mehdi and the Box&#8221; in CodeIT 2017",
+    "date": "2017-05-22T15:02:50+00:00",
+    "modified": "2017-05-22T18:07:27+00:00",
+    "slug": "editorial-of-problem-a-mehdi-and-the-box-in-codeit-2017",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/editorial-of-problem-a-mehdi-and-the-box-in-codeit-2017/cb2a56ef-18268537_1065466083554757_3503560010645890020_n.png",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "programming"
+    ],
+    "excerpt": "I proposed a problem called “Problem A – Mehdi and the Box” on the Scorify platform, and I would like to share its simple solution in this post. I am very happy because it was clear and all the contestants solved it.",
+    "original_url": "https://lekssays.wordpress.com/2017/05/22/editorial-of-problem-a-mehdi-and-the-box-in-codeit-2017/",
+    "like_count": 0
+  },
+  {
+    "title": "The Essence of Programming Languages",
+    "date": "2017-05-19T00:58:05+00:00",
+    "modified": "2017-05-19T00:58:05+00:00",
+    "slug": "the-essence-of-programming-languages",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/the-essence-of-programming-languages/c9160a7a-downloadfree81ebooksonccc23.png",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "programming"
+    ],
+    "excerpt": "In this article, I attempt to explain and summarize the concepts of programming languages, and of programming in general, drawing on my experience as a computer science student, a competitive programmer, and a back-end web developer. I will focus on the theoretical concepts I…",
+    "original_url": "https://lekssays.wordpress.com/2017/05/19/the-essence-of-programming-languages/",
+    "like_count": 2
+  },
+  {
+    "title": "Understanding the Behavior of RFID-based Locks",
+    "date": "2017-05-05T18:30:34+00:00",
+    "modified": "2017-05-05T18:31:03+00:00",
+    "slug": "bypassing-rfid-based-locks-by-cloning-rfid-security-cards",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/bypassing-rfid-based-locks-by-cloning-rfid-security-cards/e3687aaa-f2jqpyuggpfbgik-large.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "open source",
+      "rfid"
+    ],
+    "excerpt": "In this project, I attempt to break the security of RFID locks, using the locks of Building 39 as a case study since they rely on the same technique. I analyse how RFID locks and RFID cards work. RFID, or Radio Frequency IDentification, is a technique used to avoid physical…",
+    "original_url": "https://lekssays.wordpress.com/2017/05/05/bypassing-rfid-based-locks-by-cloning-rfid-security-cards/",
+    "like_count": 0
+  },
+  {
+    "title": "Foucault and Habermas Debate on Power and Media",
+    "date": "2017-04-05T12:24:45+00:00",
+    "modified": "2017-05-04T22:13:30+00:00",
+    "slug": "foucault-and-habermas-debate-on-power-and-media",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/foucault-and-habermas-debate-on-power-and-media/b6755cad-social-media-mobile-icons-snapchat-facebook-instagram-ss-800x450-3-800x450.jpg",
+    "categories": [
+      "Communication"
+    ],
+    "tags": [
+      "media"
+    ],
+    "excerpt": "This paper sets out to explain the importance of power and its effect on media, along with the key points of the Foucault/Habermas debate on power. This debate never actually took place in real life. The only interaction between Habermas and Foucault occurred at the Collège de…",
+    "original_url": "https://lekssays.wordpress.com/2017/04/05/foucault-and-habermas-debate-on-power-and-media/",
+    "like_count": 0
+  },
+  {
+    "title": "oudadOS.. My own Operating System Built from Scratch",
+    "date": "2017-03-09T13:37:21+00:00",
+    "modified": "2017-04-28T16:38:15+00:00",
+    "slug": "oudados-my-own-operating-system-built-from-scratch",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/oudados-my-own-operating-system-built-from-scratch/e50898f8-oudados.png",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "open source",
+      "operating systems",
+      "oudadOS"
+    ],
+    "excerpt": "I am happy to write these lines. It took me a long time to understand how operating systems behave. I have long dreamed of making my own operating system from scratch, or at least one based on the Linux kernel. Today I am thrilled to announce that I have finished coding my…",
+    "original_url": "https://lekssays.wordpress.com/2017/03/09/oudados-my-own-operating-system-built-from-scratch/",
+    "like_count": 3
+  },
+  {
+    "title": "Ethics, Business, and Computer Science",
+    "date": "2017-02-15T00:37:10+00:00",
+    "modified": "2017-04-19T13:20:30+00:00",
+    "slug": "ethics-business-and-computer-science",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/ethics-business-and-computer-science/e594a688-open-source-world-wallpapers_10169_1024x768.jpg",
+    "categories": [
+      "Communication"
+    ],
+    "tags": [
+      "ethics",
+      "linux",
+      "open source"
+    ],
+    "excerpt": "I am writing this post after a long discussion in class with a computer science professor here at Al Akhawayn University. I decided to write it to share with the world how I see ethics and business in the context of computer science.",
+    "original_url": "https://lekssays.wordpress.com/2017/02/15/ethics-business-and-computer-science/",
+    "like_count": 1
+  },
+  {
+    "title": "An Analytical Approach of &#8220;On Photography: In Plato&#8217;s Cave by Susan Sontag&#8221;",
+    "date": "2017-02-13T18:35:00+00:00",
+    "modified": "2017-04-19T12:22:45+00:00",
+    "slug": "an-analytical-approach-of-on-photography-in-platos-cave-by-susan-sontag",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/an-analytical-approach-of-on-photography-in-platos-cave-by-susan-sontag/a480f012-img_8875.jpg",
+    "categories": [
+      "Communication"
+    ],
+    "tags": [
+      "books",
+      "life",
+      "photography",
+      "visual communication"
+    ],
+    "excerpt": "\"On Photography: In Plato's Cave\" is one of the solid chapters that explain how photography works and how we see things through it. It remains a reference in photography because it explains concepts still used today, more than 40 years after the book was published, such as how…",
+    "original_url": "https://lekssays.wordpress.com/2017/02/13/an-analytical-approach-of-on-photography-in-platos-cave-by-susan-sontag/",
+    "like_count": 0
+  },
+  {
+    "title": "A Hebrew Female in My Heart &#8211; في قلبي انثى عبرية",
+    "date": "2017-02-04T18:07:18+00:00",
+    "modified": "2017-04-21T12:37:10+00:00",
+    "slug": "a-hebrew-female-in-my-heart",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/a-hebrew-female-in-my-heart/afb2c8b8-mnh38396.jpg",
+    "categories": [
+      "Communication",
+      "Literature"
+    ],
+    "tags": [
+      "books",
+      "ethics",
+      "friendship",
+      "islamic era",
+      "life"
+    ],
+    "excerpt": "I just finished reading a book called \"A Hebrew Female in My Heart – في قلبي انثى عبرية\" that amazed me. Unfortunately, there is no English version of this book; I would love to read it in English someday. My rating is 5/5. It was written by Dr. Khaoula Hamdi, a Tunisian author…",
+    "original_url": "https://lekssays.wordpress.com/2017/02/04/a-hebrew-female-in-my-heart/",
+    "like_count": 1
+  },
+  {
+    "title": "Description of my Presentation at OWASP AppSec Africa 2017",
+    "date": "2017-02-03T00:32:19+00:00",
+    "modified": "2017-04-19T13:21:01+00:00",
+    "slug": "description-of-my-presentation-at-owasp-appsec-africa-2017",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/description-of-my-presentation-at-owasp-appsec-africa-2017/18c86550-shutterstock_165303932.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "open source"
+    ],
+    "excerpt": "I was invited to speak at OWASP AppSec Africa 2017 in Casablanca, Morocco, on Wednesday, February 1st, 2017. My presentation was entitled \"How Did I Hack Twitter and WhatsApp for iOS?\". I had the honor of presenting on cyber security in front of a well-educated audience, and I…",
+    "original_url": "https://lekssays.wordpress.com/2017/02/03/description-of-my-presentation-at-owasp-appsec-africa-2017/",
+    "like_count": 0
+  },
+  {
+    "title": "Steganography: The Art of Hiding Secrets",
+    "date": "2017-01-19T16:23:31+00:00",
+    "modified": "2018-02-11T13:04:13+00:00",
+    "slug": "steganography-the-art-of-hiding-secrets",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/steganography-the-art-of-hiding-secrets/d7136a01-introduction-steganography-its-uses-1280x600.jpg",
+    "categories": [
+      "Communication",
+      "Computer Science"
+    ],
+    "tags": [
+      "Communication",
+      "Cyber Security",
+      "Steganography"
+    ],
+    "excerpt": "Steganography is one of the more complex fields in computer security. Its complexity comes from the limited resources that explain it, since it is rare to find a course dedicated to the subject. Yet steganography has always been with us. We simply do not pay attention to it.",
+    "original_url": "https://lekssays.wordpress.com/2017/01/19/steganography-the-art-of-hiding-secrets/",
+    "like_count": 0
+  },
+  {
+    "title": "How to Make your localhost Online on Ubuntu?",
+    "date": "2017-01-18T23:19:40+00:00",
+    "modified": "2017-04-19T13:21:29+00:00",
+    "slug": "how-to-make-your-localhost-online-on-ubuntu",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/how-to-make-your-localhost-online-on-ubuntu/7a771d53-16128859_1638857829751503_1966082053_n.png",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "NAT",
+      "ubuntu"
+    ],
+    "excerpt": "I was working on a personal project with some friends. It was hosted on a virtual machine running Ubuntu Xenial Xerus, and we reached the point where we needed to access it from other computers that were not on the same LAN in order to test it.",
+    "original_url": "https://lekssays.wordpress.com/2017/01/18/how-to-make-your-localhost-online-on-ubuntu/",
+    "like_count": 1
+  },
+  {
+    "title": "A Letter for  People who Made 2016 an Interesting Year for Me",
+    "date": "2016-12-28T23:38:43+00:00",
+    "modified": "2017-04-19T13:21:45+00:00",
+    "slug": "a-letter-for-people-who-made-2016-an-interesting-year-for-me",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/a-letter-for-people-who-made-2016-an-interesting-year-for-me/78ce22d1-ji9qebspslsbnswrzndx__mg_9520.jpg",
+    "categories": [
+      "general"
+    ],
+    "tags": [
+      "friendship"
+    ],
+    "excerpt": "At this particular moment in my life, I feel I have to write these lines: to evaluate my performance in all its aspects, and to thank the people who made this year interesting for me. The bad ones are not worth the time or energy it would take to thank them.",
+    "original_url": "https://lekssays.wordpress.com/2016/12/28/a-letter-for-people-who-made-2016-an-interesting-year-for-me/",
+    "like_count": 0
+  },
+  {
+    "title": "ARM Architecture with a Focus on Cortex-A Family",
+    "date": "2016-12-28T22:40:56+00:00",
+    "modified": "2017-04-19T13:22:08+00:00",
+    "slug": "arm-architecture-with-a-focus-on-cortex-a-family",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/arm-architecture-with-a-focus-on-cortex-a-family/16c6b65c-arm-cortex-a15.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "ARM Architecture",
+      "open source"
+    ],
+    "excerpt": "ARM Architecture, or Advanced RISC Machine, has become one of the most widely used computer architectures in the world thanks to its low energy consumption, its high performance in handling small and multiple tasks simultaneously, its low cost, and its small size. It is used…",
+    "original_url": "https://lekssays.wordpress.com/2016/12/28/arm-architecture-with-a-focus-on-cortex-a-family/",
+    "like_count": 1
+  },
+  {
+    "title": "Poetry in Arab World from Pre-Islamic Era to Abbasids and its Effect on Modern Poetry",
+    "date": "2016-12-11T23:06:13+00:00",
+    "modified": "2017-04-19T13:22:22+00:00",
+    "slug": "poetry-in-arab-world-from-pre-islamic-era-to-abbasids-and-its-effect-on-modern-poetry",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/poetry-in-arab-world-from-pre-islamic-era-to-abbasids-and-its-effect-on-modern-poetry/d7518cbb-ct3970.jpg",
+    "categories": [
+      "Literature"
+    ],
+    "tags": [
+      "history",
+      "islamic era",
+      "poetry"
+    ],
+    "excerpt": "Poetry has long been a major tool for expressing the state of a community. Arab poetry played a great role in establishing, maintaining, and destroying political systems in the Middle East and North Africa region from pre-Islamic times to the present day. It was used to promote…",
+    "original_url": "https://lekssays.wordpress.com/2016/12/11/poetry-in-arab-world-from-pre-islamic-era-to-abbasids-and-its-effect-on-modern-poetry/",
+    "like_count": 5
+  },
+  {
+    "title": "How Linux Affected my Life?",
+    "date": "2016-12-02T01:44:09+00:00",
+    "modified": "2017-04-19T13:22:34+00:00",
+    "slug": "how-linux-affected-my-life",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/how-linux-affected-my-life/8d3cfc0c-trh_open_source_artwork_wide-a351735085ed65356885b7e1df06a4172f251b6c.jpg",
+    "categories": [
+      "Communication",
+      "Computer Science"
+    ],
+    "tags": [
+      "Communication",
+      "friendship",
+      "life",
+      "linux",
+      "open source"
+    ],
+    "excerpt": "I have been using Linux-based operating systems since 2012, and over those years I built a strong relationship with my favorite one: Ubuntu. When I thought deeply about it back then, I realized that it is not just an operating system. GNU/Linux is a philosophy in computer…",
+    "original_url": "https://lekssays.wordpress.com/2016/12/02/how-linux-affected-my-life/",
+    "like_count": 3
+  },
+  {
+    "title": "An External Approach of Seeing Education in the Moroccan Context",
+    "date": "2016-12-02T00:35:54+00:00",
+    "modified": "2017-04-19T13:23:05+00:00",
+    "slug": "an-external-approach-of-seeing-education-in-the-moroccan-context",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/an-external-approach-of-seeing-education-in-the-moroccan-context/22430420-artsfon-com-75547.jpg",
+    "categories": [
+      "Communication"
+    ],
+    "tags": [
+      "culture",
+      "education",
+      "ethics",
+      "life"
+    ],
+    "excerpt": "Since childhood, I have loved explaining concepts to my friends. I have loved writing on the board with my classmates seated behind me, and I never hesitate when someone asks for help understanding a topic. I also love reading what does not appear in the textbooks.",
+    "original_url": "https://lekssays.wordpress.com/2016/12/02/an-external-approach-of-seeing-education-in-the-moroccan-context/",
+    "like_count": 3
+  },
+  {
+    "title": "Build a Simple Cloud Server Using the Open Hardware Technology",
+    "date": "2016-12-02T00:13:37+00:00",
+    "modified": "2017-04-19T13:23:18+00:00",
+    "slug": "build-a-simple-cloud-server-using-the-open-hardware-technology",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/build-a-simple-cloud-server-using-the-open-hardware-technology/a421a325-raspberry20pi20supercomputer206.jpg",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "cloud computing",
+      "open source",
+      "parallel processing",
+      "raspberry pi"
+    ],
+    "excerpt": "Data storage has become a critical problem facing computer scientists. The challenge is not only the sheer volume of data; it is also the problem of safety and privacy, driven by the revolution in information technology security. To find a possible solution to these problems,…",
+    "original_url": "https://lekssays.wordpress.com/2016/12/02/build-a-simple-cloud-server-using-the-open-hardware-technology/",
+    "like_count": 0
+  },
+  {
+    "title": "How Advertisers Communicate with our Unconscious Mind?",
+    "date": "2016-10-17T16:05:01+00:00",
+    "modified": "2017-04-19T13:23:30+00:00",
+    "slug": "how-advertisers-communicate-with-our-unconscious-mind",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/how-advertisers-communicate-with-our-unconscious-mind/5817ff2b-art_portrait_of_the_human_mind_905.jpg",
+    "categories": [
+      "Communication"
+    ],
+    "tags": [
+      "advertising",
+      "Communication"
+    ],
+    "excerpt": "Advertising is about targeting the masses. However, it is hard to target adults, because they think critically about the products they want to buy, so they know whether they need a product or not. After several studies of children's behavior, companies concluded that children…",
+    "original_url": "https://lekssays.wordpress.com/2016/10/17/how-advertisers-communicate-with-our-unconscious-mind/",
+    "like_count": 0
+  },
+  {
+    "title": "A short discussion with my Hebrew friend",
+    "date": "2016-10-17T15:57:40+00:00",
+    "modified": "2017-04-19T13:23:47+00:00",
+    "slug": "a-short-discussion-with-my-hebrew-friend",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/a-short-discussion-with-my-hebrew-friend/915ab3c1-broken-childhood-2014.jpg",
+    "categories": [
+      "Communication"
+    ],
+    "tags": [
+      "Communication",
+      "culture",
+      "life"
+    ],
+    "excerpt": "Since the first era of the social sciences with Ibn Khaldun in the 14th century, culture has been a central topic, because it involves the study of groups of people. As Hofstede G. defines it, \"It is the collective programming of the mind which distinguishes the members of one…",
+    "original_url": "https://lekssays.wordpress.com/2016/10/17/a-short-discussion-with-my-hebrew-friend/",
+    "like_count": 4
+  },
+  {
+    "title": "Hello, World!",
+    "date": "2016-10-04T00:45:45+00:00",
+    "modified": "2017-04-19T13:24:01+00:00",
+    "slug": "hello-world",
+    "author": "Ahmed Lekssays",
+    "featured_image": "../images/hello-world/b1f26275-hello-world.png",
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "excerpt": "Hello,",
+    "original_url": "https://lekssays.wordpress.com/2016/10/04/hello-world/",
+    "like_count": 0
+  }
+]

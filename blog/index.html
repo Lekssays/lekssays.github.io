@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Ahmed Lekssays</title>
+    <meta name="description" content="Writings by Ahmed Lekssays on security, computer science, and beyond.">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+    <div id="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-button close"></span>
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span>
+            </div>
+            <div class="terminal-title">guest@lekssays.com: ~/blog</div>
+        </div>
+        <div class="terminal-tabs">
+            <a class="terminal-tab" href="../index.html">./home</a>
+            <a class="terminal-tab active" href="index.html">./blog</a>
+        </div>
+        <div class="terminal-content" id="terminal-content">
+            <div class="command-line">
+                <span class="prompt">guest@<span>lekssays</span>:~/blog$ ls -lt posts/</span>
+            </div>
+            <input id="search" class="blog-search" type="text" placeholder="grep posts... (title, tag, or category)" autocomplete="off">
+            <div id="tag-bar" class="tag-bar"></div>
+            <div id="post-list" class="output">Loading posts…</div>
+        </div>
+    </div>
+
+    <script>
+        let ALL_POSTS = [];
+        let activeTag = null;
+
+        function fmtDate(iso) {
+            const d = new Date(iso);
+            return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+        }
+
+        function render(posts) {
+            const list = document.getElementById('post-list');
+            if (!posts.length) {
+                list.innerHTML = '<div class="empty">// no posts match your query</div>';
+                return;
+            }
+            // group by year
+            const byYear = {};
+            posts.forEach(p => {
+                const y = new Date(p.date).getFullYear();
+                (byYear[y] = byYear[y] || []).push(p);
+            });
+            const years = Object.keys(byYear).sort((a, b) => b - a);
+            list.innerHTML = years.map(y => `
+                <div class="year-header">${y}</div>
+                ${byYear[y].map(p => `
+                    <a class="post-card" href="post.html?slug=${encodeURIComponent(p.slug)}">
+                        <div class="post-meta">
+                            <span class="post-date"><i class="far fa-calendar"></i> ${fmtDate(p.date)}</span>
+                            ${p.like_count ? `<span class="post-likes"><i class="far fa-heart"></i> ${p.like_count}</span>` : ''}
+                        </div>
+                        <div class="post-title">${p.title}</div>
+                        <div class="post-excerpt">${p.excerpt || ''}</div>
+                        <div class="post-tags">
+                            ${(p.categories || []).map(c => `<span class="tag tag-cat">${c}</span>`).join('')}
+                            ${(p.tags || []).map(t => `<span class="tag">#${t}</span>`).join('')}
+                        </div>
+                    </a>
+                `).join('')}
+            `).join('');
+        }
+
+        function applyFilters() {
+            const q = document.getElementById('search').value.trim().toLowerCase();
+            let filtered = ALL_POSTS;
+            if (activeTag) {
+                filtered = filtered.filter(p =>
+                    (p.tags || []).includes(activeTag) || (p.categories || []).includes(activeTag));
+            }
+            if (q) {
+                filtered = filtered.filter(p => {
+                    const hay = [p.title, p.excerpt, ...(p.tags || []), ...(p.categories || [])]
+                        .join(' ').toLowerCase();
+                    return hay.includes(q);
+                });
+            }
+            render(filtered);
+        }
+
+        function buildTagBar() {
+            const counts = {};
+            ALL_POSTS.forEach(p => {
+                [...(p.categories || []), ...(p.tags || [])].forEach(t => counts[t] = (counts[t] || 0) + 1);
+            });
+            const top = Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 14);
+            const bar = document.getElementById('tag-bar');
+            bar.innerHTML = top.map(([t, c]) =>
+                `<button class="tag tag-filter" data-tag="${t}">${t} <span class="tag-count">${c}</span></button>`).join('');
+            bar.querySelectorAll('.tag-filter').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const t = btn.dataset.tag;
+                    activeTag = (activeTag === t) ? null : t;
+                    bar.querySelectorAll('.tag-filter').forEach(b => b.classList.toggle('active', b.dataset.tag === activeTag));
+                    applyFilters();
+                });
+            });
+        }
+
+        fetch('posts.json')
+            .then(r => r.json())
+            .then(posts => {
+                ALL_POSTS = posts;
+                buildTagBar();
+                render(ALL_POSTS);
+                document.getElementById('search').addEventListener('input', applyFilters);
+            })
+            .catch(e => {
+                document.getElementById('post-list').innerHTML =
+                    '<div class="empty">// failed to load posts.json — ' + e + '</div>';
+            });
+    </script>
+</body>
+
+</html>

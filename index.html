@@ -95,6 +95,9 @@
             cursor: pointer;
             transition: all 0.3s ease;
             white-space: nowrap;
+            text-decoration: none;
+            font: inherit;
+            font-size: 14px;
         }
  
         .terminal-tab.active {
@@ -391,6 +394,7 @@
             <button class="terminal-tab active" onclick="switchTab('home')">./home</button>
             <button class="terminal-tab" onclick="switchTab('research')">./research</button>
             <button class="terminal-tab" onclick="switchTab('initiatives')">./initiatives</button>
+            <a class="terminal-tab" href="blog/index.html">./blog</a>
         </div>
         <div class="terminal-content" id="terminal-content"></div>
     </div>

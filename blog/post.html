@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading… — Ahmed Lekssays</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <link rel="stylesheet" href="theme.css">
+    <!-- Markdown + diagrams + syntax highlighting -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/nord.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.0.11/dist/purify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+</head>
+
+<body>
+    <div id="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-button close"></span>
+                <span class="terminal-button minimize"></span>
+                <span class="terminal-button maximize"></span>
+            </div>
+            <div class="terminal-title" id="term-title">guest@lekssays.com: ~/blog</div>
+        </div>
+        <div class="terminal-tabs">
+            <a class="terminal-tab" href="../index.html">./home</a>
+            <a class="terminal-tab active" href="index.html">./blog</a>
+        </div>
+        <div class="terminal-content">
+            <a class="back-link" href="index.html"><i class="fas fa-arrow-left"></i> cd ../blog</a>
+            <div id="article">Loading…</div>
+        </div>
+    </div>
+
+    <script>
+        // --- helpers ---
+        function getSlug() {
+            const p = new URLSearchParams(location.search).get('slug') || '';
+            // allow only safe slug chars to avoid path traversal
+            return p.replace(/[^a-zA-Z0-9_-]/g, '');
+        }
+
+        function fmtDate(iso) {
+            const d = new Date(iso);
+            return isNaN(d) ? iso : d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        }
+
+        function parseFrontmatter(text) {
+            const m = text.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+            if (!m) return { meta: {}, body: text };
+            const meta = {};
+            m[1].split('\n').forEach(line => {
+                const idx = line.indexOf(':');
+                if (idx === -1) return;
+                const key = line.slice(0, idx).trim();
+                let val = line.slice(idx + 1).trim();
+                if (val.startsWith('[') && val.endsWith(']')) {
+                    val = val.slice(1, -1).split(',')
+                        .map(s => s.trim().replace(/^"(.*)"$/, '$1'))
+                        .filter(Boolean);
+                } else {
+                    val = val.replace(/^"(.*)"$/, '$1');
+                }
+                meta[key] = val;
+            });
+            return { meta, body: m[2] };
+        }
+
+        // --- markdown setup: route mermaid fences to <div class="mermaid"> ---
+        const renderer = new marked.Renderer();
+        const origCode = renderer.code.bind(renderer);
+        renderer.code = function (code, lang, escaped) {
+            const text = typeof code === 'object' ? code.text : code;
+            const language = typeof code === 'object' ? code.lang : lang;
+            if (language === 'mermaid') {
+                return `<div class="mermaid">${text.replace(/</g, '&lt;')}</div>`;
+            }
+            return origCode(code, lang, escaped);
+        };
+        marked.setOptions({ renderer, gfm: true, breaks: false });
+
+        mermaid.initialize({ startOnLoad: false, theme: 'default', securityLevel: 'strict' });
+
+        function escapeHtml(s) {
+            return String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+        }
+
+        async function load() {
+            const slug = getSlug();
+            const container = document.getElementById('article');
+            if (!slug) {
+                container.innerHTML = '<div class="empty">// no post specified</div>';
+                return;
+            }
+            let text;
+            try {
+                const res = await fetch(`posts/${slug}.md`);
+                if (!res.ok) throw new Error(res.status);
+                text = await res.text();
+            } catch (e) {
+                container.innerHTML = `<div class="empty">// post not found: ${escapeHtml(slug)}</div>`;
+                return;
+            }
+
+            const { meta, body } = parseFrontmatter(text);
+            document.title = (meta.title || slug) + ' — Ahmed Lekssays';
+            document.getElementById('term-title').textContent = `guest@lekssays.com: ~/blog/${slug}`;
+
+            const cats = Array.isArray(meta.categories) ? meta.categories : [];
+            const tags = Array.isArray(meta.tags) ? meta.tags : [];
+
+            const rawHtml = marked.parse(body);
+            const cleanHtml = DOMPurify.sanitize(rawHtml, {
+                ADD_TAGS: ['div'], ADD_ATTR: ['class']
+            });
+
+            container.innerHTML = `
+                <article class="article">
+                    <div class="article-header">
+                        <h1 class="article-title">${escapeHtml(meta.title || slug)}</h1>
+                        <div class="article-meta">
+                            <span class="post-date"><i class="far fa-calendar"></i> ${fmtDate(meta.date)}</span>
+                            ${meta.author ? `<span><i class="far fa-user"></i> ${escapeHtml(meta.author)}</span>` : ''}
+                        </div>
+                        <div class="post-tags">
+                            ${cats.map(c => `<span class="tag tag-cat">${escapeHtml(c)}</span>`).join('')}
+                            ${tags.map(t => `<span class="tag">#${escapeHtml(t)}</span>`).join('')}
+                        </div>
+                        ${meta.featured_image ? `<img class="article-featured" src="${encodeURI(meta.featured_image)}" alt="${escapeHtml(meta.title || '')}">` : ''}
+                    </div>
+                    <div class="article-body">${cleanHtml}</div>
+                    <div class="article-footer">
+                        ${meta.original_url ? `Originally published at <a href="${encodeURI(meta.original_url)}" target="_blank" rel="noopener">WordPress</a>.` : ''}
+                        <br>echo "Thanks for reading!" &gt;&gt; /dev/stdout
+                    </div>
+                </article>`;
+
+            // syntax-highlight non-mermaid code blocks
+            container.querySelectorAll('pre code').forEach(el => {
+                try { hljs.highlightElement(el); } catch (_) {}
+            });
+
+            // render mermaid diagrams
+            const diagrams = container.querySelectorAll('.mermaid');
+            if (diagrams.length) {
+                try { await mermaid.run({ nodes: diagrams }); } catch (e) { console.warn('mermaid:', e); }
+            }
+        }
+
+        load();
+    </script>
+</body>
+
+</html>
