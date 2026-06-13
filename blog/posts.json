@@ -1,5 +1,26 @@
 [
   {
+    "title": "Weak Symbols and a Sandbox Escape: Two Minijail Bugs Against a Moving Threat Model",
+    "date": "2026-06-13T10:00:00+00:00",
+    "modified": "2026-06-13T10:00:00+00:00",
+    "slug": "minijail-two-bugs-and-a-moving-threat-model",
+    "author": "Ahmed Lekssays",
+    "featured_image": "",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "Sandboxing",
+      "Linux",
+      "seccomp",
+      "Vulnerability Research"
+    ],
+    "excerpt": "I reported two bugs in Google's minijail sandbox: a silent seccomp bypass via a weak ASan symbol, and a NULL dereference in the unmarshaler. One was called 'interesting from a technical perspective,' but both were dismissed as out of scope. Then, a month later, the threat model in the README quietly grew a new clause that happened to cover exactly the case I had argued about.",
+    "original_url": "",
+    "like_count": 0
+  },
+  {
     "title": "On Cross-chain Bridges Security",
     "date": "2022-08-07T20:57:56+00:00",
     "modified": "2022-08-07T23:28:20+00:00",
