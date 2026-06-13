@@ -112,10 +112,14 @@
             const cats = Array.isArray(meta.categories) ? meta.categories : [];
             const tags = Array.isArray(meta.tags) ? meta.tags : [];
 
+            // Image paths in the Markdown are stored relative to posts/ (`../images/...`),
+            // but this page lives at /blog/, so rewrite them to `images/...`.
+            const fixImgPath = p => (p || '').replace(/^(?:\.\.\/)+images\//, 'images/');
+
             const rawHtml = marked.parse(body);
             const cleanHtml = DOMPurify.sanitize(rawHtml, {
                 ADD_TAGS: ['div'], ADD_ATTR: ['class']
-            });
+            }).replace(/((?:src|href)=")(?:\.\.\/)+images\//g, '$1images/');
 
             container.innerHTML = `
                 <article class="article">
@@ -129,7 +133,7 @@
                             ${cats.map(c => `<span class="tag tag-cat">${escapeHtml(c)}</span>`).join('')}
                             ${tags.map(t => `<span class="tag">#${escapeHtml(t)}</span>`).join('')}
                         </div>
-                        ${meta.featured_image ? `<img class="article-featured" src="${encodeURI(meta.featured_image)}" alt="${escapeHtml(meta.title || '')}">` : ''}
+                        ${meta.featured_image ? `<img class="article-featured" src="${encodeURI(fixImgPath(meta.featured_image))}" alt="${escapeHtml(meta.title || '')}">` : ''}
                     </div>
                     <div class="article-body">${cleanHtml}</div>
                     <div class="article-footer">
