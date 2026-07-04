@@ -1,5 +1,27 @@
 [
   {
+    "title": "When Native Dependencies Betray: An Integer Overflow in libxml2 with Cross-Language Impact on PHP and Swift",
+    "date": "2026-07-04T10:00:00+00:00",
+    "modified": "2026-07-04T10:00:00+00:00",
+    "slug": "when-native-dependencies-betray-libxml2-integer-overflow",
+    "author": "Ahmed Lekssays",
+    "featured_image": "",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "Vulnerability Research",
+      "libxml2",
+      "PHP",
+      "Swift",
+      "Static Analysis"
+    ],
+    "excerpt": "A single integer overflow in libxml2's xmlBuildQName() (CVE-2025-6021) cascaded into PHP's SOAP extension (CVE-2025-6491) and Swift's FoundationXML on Linux. This post walks through the root cause, the cross-language crash paths, and the Joern taint analysis used to find them, showing how one flaw in a foundational native library ripples across entire language ecosystems.",
+    "original_url": "",
+    "like_count": 0
+  },
+  {
     "title": "Weak Symbols and a Sandbox Escape: Two Minijail Bugs Against a Moving Threat Model",
     "date": "2026-06-13T10:00:00+00:00",
     "modified": "2026-06-13T10:00:00+00:00",
