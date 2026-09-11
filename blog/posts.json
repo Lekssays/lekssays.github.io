@@ -1,5 +1,27 @@
 [
   {
+    "title": "The Vulnerability Research Bar Is Moving",
+    "date": "2026-09-11T10:00:00+00:00",
+    "modified": "2026-09-11T10:00:00+00:00",
+    "slug": "the-vulnerability-research-bar-is-moving",
+    "author": "Ahmed Lekssays",
+    "featured_image": "",
+    "categories": [
+      "Computer Science"
+    ],
+    "tags": [
+      "Cyber Security",
+      "Vulnerability Research",
+      "AI",
+      "Bug Bounty",
+      "Benchmarks",
+      "Fuzzing"
+    ],
+    "excerpt": "Frontier models are making vulnerability discovery cheaper, and the difficult work is shifting toward context, validation, exploitation, and remediation. Using curl, Chromium, and Firefox as case studies, this post argues that the research bar has fallen for routine findings and will rise again, and that our current metrics (bug counts and model costs) measure the wrong things.",
+    "original_url": "",
+    "like_count": 0
+  },
+  {
     "title": "When Native Dependencies Betray: An Integer Overflow in libxml2 with Cross-Language Impact on PHP and Swift",
     "date": "2026-07-04T10:00:00+00:00",
     "modified": "2026-07-04T10:00:00+00:00",
