@@ -172,6 +172,16 @@
             border-color: var(--text-blue);
         }
  
+        .publication-card a {
+            color: var(--text-blue);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .publication-card a:hover {
+            text-decoration: underline;
+        }
+
         .contact-item a {
             color: var(--text-primary);
             text-decoration: none;
@@ -440,6 +450,13 @@
                 ],
                 awards: [{
                         category: "Research",
+                        title: "Distinguished Reviewer Award",
+                        year: "2026",
+                        extra: "USENIX Security 2026 Artifact Evaluation",
+                        description: '<a href="https://secartifacts.github.io/usenixsec2026/awards" target="_blank">secartifacts.github.io/usenixsec2026/awards</a>'
+                    },
+                    {
+                        category: "Research",
                         title: "Marie Skłodowska-Curie Actions Fellowship",
                         year: "2019"
                     },
@@ -470,6 +487,10 @@
                     {
                         source: "GNOME / libsoup",
                         description: "Discovered HTTP request smuggling vulnerability (CVE-2026-1801) in libsoup's chunked transfer encoding parser. The library accepted lone LF characters instead of CRLF as required by RFC 9112, enabling request smuggling when deployed behind RFC-compliant proxies."
+                    },
+                    {
+                        source: "Google / Antigravity",
+                        description: "Discovered and reported a security vulnerability in Google's Antigravity agentic development platform."
                     }
                 ],
                 contacts: [
